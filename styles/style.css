@@ -1,25 +1,11 @@
-* {box-sizing: border-box; }
-p { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
+body {
+  background-color: aqua; 
+}
+h1 {
+  color: magenta;
+}
+p { color: gray; }
 
-header img { max-width: 25%;
-            float: left; }
-header h1 { max-width: 75%;
-            float: left; }
-nav { clear: both; }
+aside p { color: black; }
 
-header li { float: left; 
-            list-style-type: none}
-
-article { clear: both;
-          float: left; 
-          width: 70%; 
-          padding: 1rem;
-          background-color: aqua;}
-
-aside {   float: right;
-          width: 30%;
-          padding: 2rem;
-          background-color: pink;}
-
-footer {  clear: both;
-          padding-left: 2rem;}
+footer a { color: red; }
