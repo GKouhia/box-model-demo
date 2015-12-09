@@ -10,17 +10,38 @@ No space means this applies to aside tags that have a class of highlight!--*/
 #homepage {
   width: 80%;
   margin: auto;
-  /* margin: auto; is how you center things horizontally. It's super easy and used all the time. --*/
+  /* class and id or attributes that may be given to an html element. These are great for making an element on a page findable. These will be particularly useful for javascript. */
+  
+  /*-- margin: auto; is how you center things horizontally. It's super easy and used all the time. --*/
   border: 2px solid black;
 }
+  
 /*-- the id or homepage will have these styles. As we can only use an id once per page, we must use id's sparingly. --*/
 
-/*-- we style for different states by using a:hover {} You don't apply a class of hover to anything but you can say, an a tag with a pseudo class of hover will change.--*/
+/*-- we style for different states by using a:hover {} You don't apply a class of hover to anything but you can say, an A tag with a pseudo class of hover will change.--*/
 
 a:hover {
   color: red;
   font-size: 2em;
 }
-
-
-
+/* -- 
+h1: hover {color: magenta; }
+a: visited { text-decoration: none; }
+header {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+article {
+  width: 60%;
+  margin: auto;
+}
+a::first-letter {
+  font-sze: 1.5em;
+}
+footer {
+  border: 2px solid magenta;
+  border-radius: 25px;
+}
+/*--border styles require 3 attributes -- line width, line type, and color. This is the only selector that should be measured in pixels even for responsive design. 
+--*/
