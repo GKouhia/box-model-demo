@@ -3,11 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <title>Box Model Info</title>
+  <style>
+    body {
+      background-color: aqua; 
+    }
+    h1 {
+      color: magenta;
+    }
+    p { color: gray; }
+    
+    aside p { color: black; }
+    
+    footer a { color: red; }
   
-  <link rel="stylesheet" type="text/css" href="styles/style.css"
-        
+  </style>
 </head>
-<body id="homepage">
+<body>
   <header>
     <img src="http://lovemeow.com/wp-content/uploads/2011/05/4669827150_6725db354b_o.jpg" alt="kitten emerging from a cardboard box" >
     <h1>Box Model Info Sheet</h1>
@@ -31,10 +42,13 @@
     <p>All HTML elements can be considered as boxes. The box model wraps around the element and consists of the margin, border, padding, and content itself.</p>
 
 
-    <p class="highlight">The box model allows us to add a border around elements, and control the space between them. </p>
+    <p>The box model allows us to add a border around elements, and control the space between them. </p>
 
 
     <p>Example of styling with the box model:</p>
+    
+<!-- NOTE: the Pre tag is used to display the PREFORMATTED layout of text, such as the text in .box below, to include the several tabs to the right from the left edge of the page. -->
+
     <pre>
       .box {
         width: 30%;
@@ -55,13 +69,16 @@
   </article>
 
 
-  <aside class="highlight">
+  <aside>
     <h3>CSS Tip</h3>
     <p>When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add the padding, borders and margins.</p>
   </aside>
 
   <footer>
+  <!-- NOTE: in the paragraph below W3Schools is a clickable link to the href URL. As such it is included with in the <a ...css_boxmodel.asp">W3Schools</a> tag. But the period is not part of the clickable link, so it is kept outside the </a>, but it is part of the complete paragraph of Source: W3Schools. -->
+
     <p>Source: <a href="http://www.w3schools.com/css/css_boxmodel.asp">W3Schools</a>.</p>
   </footer>
 </body>
 </html>
+
